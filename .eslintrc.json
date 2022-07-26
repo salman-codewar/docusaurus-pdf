@@ -1,0 +1,77 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
+    "plugin:eslint-comments/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "react/jsx-uses-react": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+
+    "@typescript-eslint/quotes": ["error", "double"],
+    "no-unused-vars": "off",
+    "spaced-comment": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "jsx-a11y/control-has-associated-label": "off",
+    "react/no-array-index-key": "off",
+    "comma-dangle": "off",
+    "arrow-body-style": "off",
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off",
+    "object-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-shadow": "off",
+    "operator-linebreak": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "global-require": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "react/jsx-curly-newline": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["warn"],
+    "no-case-declarations": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "no-tabs": "off",
+    "no-console": "off",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off",
+    "curly": "off",
+    "nonblock-statement-body-position": "off",
+    "brace-style": "off",
+    "no-alert": "off",
+    "prettier/prettier": 0
+  }
+}
