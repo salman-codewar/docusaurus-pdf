@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const path = require("path");
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -26,19 +25,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: [
-    "./src/plugins/canvas-loader.js",
-    [
-      "docusaurus-plugin-module-alias",
-      {
-        alias: {
-          "pdfjs-dist": path.resolve(
-            "./node_modules/pdfjs-dist/legacy/build/pdf.js"
-          ),
-        },
-      },
-    ],
-  ],
+  plugins: ["./src/plugins/canvas-loader.js"],
   presets: [
     [
       "classic",
